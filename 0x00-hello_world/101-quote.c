@@ -6,7 +6,7 @@
  * Description: Print a quote using write function
  *    ssize_t write(int fd, cons void *buff, size_t count); 
  *
- * Return: (1) error
+ * Return: 1 (error)
 */
 
 int main(void)

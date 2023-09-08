@@ -14,8 +14,7 @@ int main(void)
 
 	while (com <= 9)
 	{
-		putchar(com + 48);
-		
+		putchar(com + 48);	
 		if (com != 9)
 		{
 			putchar(',');

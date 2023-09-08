@@ -20,7 +20,7 @@ int main(void)
 		{
 			putchar(',');
 			putchar(' ');
-		}
+		};
 		com++1;
 	}
 	putchar('\n');

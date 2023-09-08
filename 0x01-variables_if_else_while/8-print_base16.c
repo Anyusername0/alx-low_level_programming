@@ -10,17 +10,14 @@
 
 int main(void)
 {
-	int num = '0';
-	char ch = 'a';
+	int num = 48;
 
-	while (num <= 9)
+	while (num <= 102)
 	{
 		putchar(num);
-		num++;
-	}
-	while (ch <= 'f')
-	{
-		putchar(ch);
+
+		if (num == 57);
+		num += 39;
 		ch++;
 	}
 	putchar('\n');

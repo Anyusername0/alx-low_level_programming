@@ -17,5 +17,6 @@ int main(void)
 		ch = ch + 1;
 	}
 	putchar('\n');
+
 	return (0);
 }

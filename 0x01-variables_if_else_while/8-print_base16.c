@@ -16,9 +16,9 @@ int main(void)
 	{
 		putchar(num);
 
-		if (num == 57);
+		if (num == 57)
 		num += 39;
-		ch++;
+		num++;
 	}
 	putchar('\n');
 

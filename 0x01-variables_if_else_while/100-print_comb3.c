@@ -19,8 +19,8 @@ int main(void)
 		{
 			if (num1 != num2 && num1 < num2)
 			{
-				putchar(num1);
-				putchar(num2);
+				putchar(num1 + 48);
+				putchar(num2 + 48);
 
 				if (num1 + num2 != 17)
 				{

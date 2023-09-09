@@ -40,7 +40,7 @@ int main(void)
                 	}
 			num2++;
 		}
-		num3=++;
+		num3++;
 	}
 	putchar('\n');
 

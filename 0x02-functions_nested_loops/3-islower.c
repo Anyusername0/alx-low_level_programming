@@ -3,7 +3,7 @@
 /**
  * _islower - function to know if a character is lowercase
  *
- * Description: function that checks lowercase character
+ * @c: function that checks lowercase character
  *
  * Return: 1 if lowercase , 0 if otherwise (success)
 */

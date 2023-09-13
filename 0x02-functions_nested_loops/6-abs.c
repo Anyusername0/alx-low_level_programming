@@ -3,7 +3,7 @@
 /**
  * _abs: function that calculates absolyte value
  *
- * @n: takes an integer
+ * @n: takes an integer in the function
  *
  * Return: 0 (success)
 */

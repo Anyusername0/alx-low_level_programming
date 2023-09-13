@@ -5,7 +5,8 @@
  *
  * @n: takes an integer
  *
- * Return: 0 (success)*/
+ * Return: 0 (success)
+*/
 
 int _abs(int)
 {

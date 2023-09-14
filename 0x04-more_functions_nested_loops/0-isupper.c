@@ -6,7 +6,7 @@
  *
  * @c: input for function
  *
- * Description: 1 if uppercase , 0 if else
+ * Return: 1 if uppercase , 0 if else
 */
 
 int _isupper(int c)

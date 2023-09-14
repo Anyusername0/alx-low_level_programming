@@ -9,8 +9,9 @@
 
 void print_numbers(void)
 {
+	int n;
 
-	for (int n = 0; n >= 48 && n <= 57; n++)
+	for (n = 0; n >= 48 && n <= 57; n++)
 		_putchar(n + 48);
 	_putchar('\n');
 }

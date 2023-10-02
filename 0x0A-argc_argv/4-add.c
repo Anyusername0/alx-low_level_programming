@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	while (--argc)
 	{
 		c = argv[argc];
-		while (c)
+		while (*c)
 			if (*c < '0' || *c > '9')
 			{
 				printf("Error\n");

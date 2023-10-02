@@ -14,31 +14,20 @@
  * Return: 0 (success)
  */
 
-int main(int argc, char *argv[])
-
+int check_num(char *str)
 {
-	int count;
-	int str_to_int;
-	int sum = 0;
+	unsigned int count;
 
-	count = 1;
-	while (count < argc)
+	count = 0;
+	while (count < strlen(str))
+
 	{
-		if (check_num(argv[count]))
-
+		if (!isdigit(str[count]))
 		{
-			str_to_int = atoi(argv[count]);
-			sum += str_to_int;
-		else
-		{
-			printf("Error\n");
-			return (1);
+			return (0);
 		}
 
 		count++;
 	}
-
-	printf("%d\n", sum); /*print sum*/
-
-	return (0);
+	return (1);
 }

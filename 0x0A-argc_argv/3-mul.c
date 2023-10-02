@@ -2,14 +2,15 @@
 #include <stdlib.h>
 
 /**
- * _atoi - multiplies two numbers
+ * main - multiplies two numbers
  *
- * @s: string to be converted
+ * @argc: number of arguments
+ * @argv: pointer to an array
  *
  * Return: the int converted from the string
  */
 
-int _atoi(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int mulsum;
 

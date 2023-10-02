@@ -16,30 +16,19 @@
 
 int main(int argc, char *argv[])
 {
-	int count;
-	int str_to_int;
 	int sum = 0;
+	char *c;
 
-	count = 1;
-	while (count < argc)
+	while (--argc)
 	{
-		if (check_num(argv[count]))
-
-		{
-			str_to_int = atoi(argv[count]);
-			sum += str_to_int;
-		}
-
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
-
-		count++;
+		for (c = argv[argc]; *c; c++)
+			if (*c < '0' || *c > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
+		sum += atoi(argv[argc]);
 	}
-
 	printf("%d\n", sum);
-
 	return (0);
 }

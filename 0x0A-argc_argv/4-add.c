@@ -12,20 +12,35 @@
  */
 
 int main(int argc, char *argv[])
-{
-	int sum = 0;
-	char *c;
 
-	while (--argc)
+{
+
+	/*Declaring variables*/
+	int count;
+	int str_to_int;
+	int sum = 0;
+
+	count = 1;
+	while (count < argc) /*Goes through the whole array*/
 	{
-		for (c = argv[argc]; *c; c++)
-			if (*c < '0' || *c > '9')
-			{
-				printf("Error\n");
-				return (1);
-			}
-		sum += atoi(argv[argc]);
+		if (check_num(argv[count]))
+
+		{
+			str_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/
+			sum += str_to_int;
+		}
+
+		/*Condition if one of the number contains symbols that are not digits*/
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
+
+		count++;
 	}
-	printf("%d\n", sum);
+
+	printf("%d\n", sum); /*print sum*/
+
 	return (0);
 }

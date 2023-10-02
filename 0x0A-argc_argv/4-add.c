@@ -21,12 +21,14 @@ int main(int argc, char *argv[])
 
 	while (--argc)
 	{
-		for (c = argv[argc]; *c; c++)
+		c = argv[argc];
+		while (c)
 			if (*c < '0' || *c > '9')
 			{
 				printf("Error\n");
 				return (1);
 			}
+		c++
 		sum += atoi(argv[argc]);
 	}
 	printf("%d\n", sum);

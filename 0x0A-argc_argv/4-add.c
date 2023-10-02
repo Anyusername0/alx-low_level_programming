@@ -15,22 +15,30 @@
  */
 
 int main(int argc, char *argv[])
-{
-	int sum = 0;
-	char *c;
 
-	while (--argc)
+{
+	int count;
+	int str_to_int;
+	int sum = 0;
+
+	count = 1;
+	while (count < argc)
 	{
-		while (c != '\0')
+		if (check_num(argv[count]))
+
 		{
-			if (c < '0' || c > '9')
-			{
-				printf("Error\n");
-				return (1);
-			}
+			str_to_int = atoi(argv[count]);
+			sum += str_to_int;
+		else
+		{
+			printf("Error\n");
+			return (1);
 		}
-		sum += atoi(argv[argc]);
+
+		count++;
 	}
-	printf("%d\n", sum);
+
+	printf("%d\n", sum); /*print sum*/
+
 	return (0);
 }
